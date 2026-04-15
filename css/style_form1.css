@@ -1,0 +1,170 @@
+body {
+    margin: 0px;
+    padding: 0px;
+    background-image: linear-gradient( rgb(170, 0, 0), rgb(224, 191, 0));
+    overflow-x: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+nav {
+    display: flex;
+    position: fixed;
+    top: 0;
+    width: 97.5vw;
+    padding: 10px 20px;
+    margin: 0;
+    background-color: gold;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+.pages {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width : 30rem;
+}
+.pages img {
+    width: auto;
+    height: 3rem;
+}
+.pages h1 {
+    font-size: 1.5rem;
+    font-family: sans-serif;
+    color:  rgb(170, 0, 0);
+    letter-spacing: 1px;
+    margin: 0px;
+}
+.timer{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 42rem;
+    margin: 0px 50px;
+}
+.timer .group1 {
+    display: flex;
+    align-items: center;
+}
+.clock {
+    width: 30rem;
+    height: 25px;
+    padding: 0px;
+    border-radius: 100px;
+    background: white;
+    margin-right: 10px;
+}
+.clock span {
+    border-radius: 100px;
+    display: block;
+    width: 10rem;
+    height: 25px;
+    margin: 0px;
+    background: rgb(170, 0, 0);
+}
+.pre {
+    color: rgb(170, 0, 0);
+    font-family: sans-serif;
+    font-size: 2rem;
+    margin-left: 30px;
+    letter-spacing: 1px;
+    margin: 0px;
+}
+.close {
+    text-decoration: none;
+    color: white;
+    background: rgb(170, 0, 0);
+    text-align: center;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    font-size: 2rem;
+    font-weight: bold;
+    border-radius: 50%;
+}
+form {
+    margin-top: 7rem;
+    width: 50%;
+}
+#quiz {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+article{
+    margin-top: 10px;
+    padding: 20px 30px;
+    background-color: rgb(253, 242, 251);
+    border-radius:40px 0px ;
+    width: 90%;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: bolder;
+}
+article p {
+    font-size: large;
+    font-weight: 800;
+}
+.answer{
+    height: 50px;
+    width: 100%;
+    background-color:rgba(0,0,0,0);
+    border:none;
+    border-bottom: 1px solid;
+    transition: 0.5s ease;
+}
+.answer:focus{
+    border: none;
+    transform: scale(1.05);
+}
+.button-sub{
+    background-color: rgb(170, 0, 0);
+    cursor: pointer;
+    transition: all 0.3s ease-in ;
+    margin: 30px 25% 5% 25%;
+    height: 60px;
+    width: 50%;
+    border: none;
+    border-radius: 15px;
+    color: white;
+    font-size: xx-large;
+    font-weight: 600;
+}
+.button-sub:hover {
+    box-shadow: 2px 2px 1px 0px #000;
+    transform: scale(1.05);
+    border-radius: 20px 0px;
+}
+input{
+    position: relative;
+    height: 20px;
+    width: 30px;
+    size: 80px;
+}
+input:checked {
+    background-color: rgb(170, 0, 0);
+}
+input:checked::after{
+    content:"";
+    border-color: transparent rgb(170, 0, 0) transparent transparent;
+    width: 8rem;
+    border-width: 1rem;
+    border-style: solid;
+    float: left;
+    margin-top: -2px;
+    background: transparent;
+}
+input:hover{
+    cursor:pointer;
+}
+label:hover{
+    cursor: pointer;
+}
+::selection {
+    background-color: gold;
+    color: rgb(170, 0, 0);
+    
+}
